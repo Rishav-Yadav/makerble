@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Makerble</title>
+  </head>
+  <body>
+    <header>
+      <navbar>
+        <div id="left-part-of-nav">
+          <a href="index.html"
+            ><img
+              src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+              alt="Makerble-Logo"
+            />
+            <h3>Makerble</h3></a
+          >
+          <form action="">
+            <input
+              type="text"
+              placeholder="&#xF002; Search for contacts and projects"
+              style="font-family: Arial, FontAwesome"
+            />
+          </form>
+        </div>
+        <div id="right-part-of-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li id="dropdown-for-my-apps">
+              <button>My Apps <i class="fa-solid fa-chevron-down"></i></button>
+              <div id="my-apps">
+                <ul class="dropdown hide">
+                  <li><a href="">Welcome Hub</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="albums.html">Albums</a></li>
+                  <li><a href="tasks.html">Tasks</a></li>
+                  <li><a href="maps.html">Maps</a></li>
+                  <li><a href="ideas.html">Ideas</a></li>
+                  <li><a href="metric.html">Metric</a></li>
+                  <li><a href="changemakers.html">Changemakers</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="explore.html">Explore</a></li>
+            <li>
+              <button>Notifications <i class="fas fa-bell"></i></button>
+              <ul class="dropdown hide">
+                <li>
+                  <i class="fas fa-bolt"></i>You have been assigned a task
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i> Daniel wants to connect with
+                  you
+                </li>
+              </ul>
+            </li>
+            <li id="dropdown-for-user-profile">
+              <button>User1234 <i class="fa-solid fa-chevron-down"></i></button>
+              <div id="user-profile">
+                <ul class="dropdown hide" id="drop-down-on-user-profile">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Setting</a></li>
+                  <li><a href="#">Log Out</a></li>
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">Request Support</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </navbar>
+    </header>
+    <section id="content">
+      <small>NewsFeed</small>
+      <div id="left-part">
+        <div id="newsfeed">
+          <form id="post-form" action="">
+            <input type="text" placeholder="What do you want to post?" />
+            <button type="submit" class="btn submit">Post</button>
+            <button class="btn cancel">Cancel</button>
+            <button class="btn options">
+              Options <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div id="form-options " class="hide">
+              <button>Add Progress</button>
+              <button>Attachment</button>
+              <button>Location</button>
+              <button>Date</button>
+            </div>
+          </form>
+          <div class="feed-card">
+            <div class="card-upper-part">
+              <div class="user-profile">
+                <img
+                  src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                  alt=""
+                />
+                <a href=""><h3>Desmond Miles</h3></a>
+              </div>
+              <small>Posted an hour ago</small>
+            </div>
+            <div class="card-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              tempore rem officiis quidem quis numquam saepe molestias officia?
+              Voluptatibus, numquam.
+            </div>
+            <div class="card-comment">
+              <img
+                src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                alt=""
+              />
+              <input type="text" placeholder="Write a comment" />
+              <button class="btn post">Post</button>
+            </div>
+          </div>
+          <div class="feed-card">
+            <div class="card-upper-part">
+              <div class="user-profile">
+                <img
+                  src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                  alt=""
+                />
+                <a href=""><h3>Desmond Miles</h3></a>
+              </div>
+              <small>Posted an hour ago</small>
+            </div>
+            <div class="card-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              tempore rem officiis quidem quis numquam saepe molestias officia?
+              Voluptatibus, numquam.
+            </div>
+            <div class="card-comment">
+              <img
+                src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                alt=""
+              />
+              <input type="text" placeholder="Write a comment" />
+              <button class="btn post">Post</button>
+            </div>
+          </div>
+          <div class="feed-card">
+            <div class="card-upper-part">
+              <div class="user-profile">
+                <img
+                  src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                  alt=""
+                />
+                <a href=""><h3>Desmond Miles</h3></a>
+              </div>
+              <small>Posted an hour ago</small>
+            </div>
+            <div class="card-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              tempore rem officiis quidem quis numquam saepe molestias officia?
+              Voluptatibus, numquam.
+            </div>
+            <div class="card-comment">
+              <img
+                src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                alt=""
+              />
+              <input type="text" placeholder="Write a comment" />
+              <button class="btn post">Post</button>
+            </div>
+          </div>
+        </div>
+        <!-- Lower Cards -->
+        <div id="lower-cards">
+          <div class="lower-card organizations">
+            <h4>Organizations</h4>
+            <ul class="x-scrollable-lists">
+              <li>
+                <div class="img">
+                  <img
+                    src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                    alt=""
+                  />
+                </div>
+                <div class="organization-info">
+                  <h5>Organization 1</h5>
+                </div>
+              </li>
+              <li>
+                <div class="img">
+                  <img
+                    src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                    alt=""
+                  />
+                </div>
+                <div class="organization-info">
+                  <h5>Organization 2</h5>
+                </div>
+              </li>
+              <li>
+                <div class="img">
+                  <img
+                    src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                    alt=""
+                  />
+                </div>
+                <div class="organization-info">
+                  <h5>Organization 3</h5>
+                </div>
+              </li>
+              <li>
+                <div class="img">
+                  <img
+                    src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                    alt=""
+                  />
+                </div>
+                <div class="organization-info">
+                  <h5>Organization 4</h5>
+                </div>
+              </li>
+            </ul>
+            <button class="scroll-right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="lower-card following">
+            <h4>People You Follow</h4>
+            <ul class="x-scrollable-lists">
+              <li>
+                <div class="img">
+                  <img
+                    src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                    alt=""
+                  />
+                </div>
+                <div class="person-info">
+                  <h5>Person 1</h5>
+                </div>
+              </li>
+              <li>
+                <div class="img">
+                  <img
+                    src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                    alt=""
+                  />
+                </div>
+                <div class="person-info">
+                  <h5>Person 2</h5>
+                </div>
+              </li>
+              <li>
+                <div class="img">
+                  <img
+                    src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                    alt=""
+                  />
+                </div>
+                <div class="person-info">
+                  <h5>Person 3</h5>
+                </div>
+              </li>
+              <li>
+                <div class="img">
+                  <img
+                    src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                    alt=""
+                  />
+                </div>
+                <div class="person-info">
+                  <h5>Person 4</h5>
+                </div>
+              </li>
+            </ul>
+            <button class="scroll-right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="lower-card contacts">
+            <h4>Contacts</h4>
+            <ul class="x-scrollable-lists">
+              <li>
+                <div class="img">
+                  <img
+                    src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                    alt=""
+                  />
+                </div>
+                <div class="contact-info">
+                  <h5>Contact 1</h5>
+                </div>
+              </li>
+              <li>
+                <div class="img">
+                  <img
+                    src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                    alt=""
+                  />
+                </div>
+                <div class="contact-info">
+                  <h5>Contact 2</h5>
+                </div>
+              </li>
+              <li>
+                <div class="img">
+                  <img
+                    src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                    alt=""
+                  />
+                </div>
+                <div class="contact-info">
+                  <h5>Contact 3</h5>
+                </div>
+              </li>
+              <li>
+                <div class="img">
+                  <img
+                    src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                    alt=""
+                  />
+                </div>
+                <div class="contact-info">
+                  <h5>Contact 4</h5>
+                </div>
+              </li>
+            </ul>
+            <button class="scroll-right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="right-part">
+        <div class="right-card events">
+          <h4>Events</h4>
+          <ul class="scrollable-lists">
+            <li>
+              <div><a href="">Event 1</a></div>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </li>
+            <li>
+              <div><a href="">Event 2</a></div>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </li>
+            <li>
+              <div><a href="">Event 3</a></div>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </li>
+          </ul>
+          <button class="scroll-down">
+            <i class="fa-solid fa-chevron-down fa-1x"></i>
+          </button>
+        </div>
+
+        <div class="right-card boards">
+          <h4>Boards</h4>
+          <ul class="scrollable-lists">
+            <li>
+              <div>
+                <img
+                  src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                  alt=""
+                />Board 1
+              </div>
+            </li>
+            <li>
+              <div>
+                <img
+                  src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                  alt=""
+                />Board 2
+              </div>
+            </li>
+            <li>
+              <div>
+                <img
+                  src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                  alt=""
+                />Board 3
+              </div>
+            </li>
+            <li>
+              <div>
+                <img
+                  src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                  alt=""
+                />Board 4
+              </div>
+            </li>
+          </ul>
+          <button class="scroll-down">
+            <i class="fa-solid fa-chevron-down fa-1x"></i>
+          </button>
+        </div>
+        <div class="right-card progress">
+          <h4>Personal Progress</h4>
+          <ul class="scrollable-lists">
+            <li>
+              Lorem ipsum dolor sit amet.
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet.
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet.
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet.
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+            </li>
+          </ul>
+          <button class="scroll-down">
+            <i class="fa-solid fa-chevron-down fa-1x"></i>
+          </button>
+        </div>
+        <div class="right-card tasks">
+          <h4>Tasks</h4>
+          <ul class="scrollable-lists">
+            <li>Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li>
+            <li>Task 4</li>
+            <li>Task 5</li>
+            <li>Task 6</li>
+            <li>Task 7</li>
+          </ul>
+          <button class="scroll-down">
+            <i class="fa-solid fa-chevron-down fa-1x"></i>
+          </button>
+          <button class="btn submit">Add an Task</button>
+        </div>
+
+        <div class="right-card projects">
+          <h4>Projects</h4>
+          <ul class="scrollable-lists">
+            <li>
+              <a href="">Project 1</a>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </li>
+            <li>
+              <a href="">Project 2</a>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </li>
+            <li>
+              <a href="">Project 3</a>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </li>
+          </ul>
+          <button class="scroll-down">
+            <i class="fa-solid fa-chevron-down fa-1x"></i>
+          </button>
+        </div>
+
+        <div class="right-card albums">
+          <h4>Albums</h4>
+          <ul class="scrollable-lists">
+            <li>
+              <div>
+                <img
+                  src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                  alt=""
+                />Album 1
+              </div>
+            </li>
+            <li>
+              <div>
+                <img
+                  src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                  alt=""
+                />Album 2
+              </div>
+            </li>
+            <li>
+              <div>
+                <img
+                  src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                  alt=""
+                />Album 3
+              </div>
+            </li>
+            <li>
+              <div>
+                <img
+                  src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-mini-logo-transparent-2e543d506b626dfda97d5ae54c54d174d345de3cfc9ec3105c6124e90c018667.png"
+                  alt=""
+                />Album 4
+              </div>
+            </li>
+          </ul>
+          <button class="scroll-down">
+            <i class="fa-solid fa-chevron-down fa-1x"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="sprites-line"></div>
+      <div class="sprites-m-logo"></div>
+      <div class="logo card">
+        <img
+          src="https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/makerble-small-logo-b3ad49d24c0988fc1f040e3abf19b383b897c2b49220534e1782682d26cf208e.png"
+          alt=""
+        />
+      </div>
+      <div class="links">
+        <div class="about-links card">
+          <h4>About Makerble</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy & Cookies</a></li>
+          </ul>
+        </div>
+        <div class="organizations-links card">
+          <h4>Organization</h4>
+          <ul>
+            <li><a href="#">Discover the MarketPlace</a></li>
+            <li><a href="#">Create Organization</a></li>
+            <li><a href="#">Account</a></li>
+          </ul>
+        </div>
+        <div class="account-link card">
+          <h4>Your Account</h4>
+          <ul>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+        <div class="explore-link card">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#">Metrics</a></li>
+            <li><a href="#">Networks</a></li>
+            <li><a href="#">Strategies</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Studies</a></li>
+            <li><a href="#">Surveys</a></li>
+            <li><a href="#">Ideas</a></li>
+            <li><a href="#">Vouchers</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact-us card">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i> contact@makerble.com</li>
+          <li><i class="fa-solid fa-phone"></i> 020-8123-6253</li>
+        </ul>
+      </div>
+
+      <div class="social-links card">
+        <h4>Follow Makerble Stories</h4>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/"
+              ><i class="fa-brands fa-linkedin fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/"
+              ><i class="fa-brands fa-youtube fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/"
+              ><i class="fa-brands fa-twitter fa-2x"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+button {
+  border: none;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  cursor: pointer; }
+
+ul {
+  list-style: none; }
+
+navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between; }
+  navbar #left-part-of-nav {
+    padding: 0.6rem 1.5rem;
+    width: 25%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center; }
+    navbar #left-part-of-nav a {
+      display: flex;
+      align-items: center;
+      padding: 0rem 1rem;
+      border: none;
+      border-right: 1px solid #333;
+      padding: 1rem; }
+      navbar #left-part-of-nav a img {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 0.4rem; }
+    navbar #left-part-of-nav form {
+      margin-left: 1rem; }
+      navbar #left-part-of-nav form input {
+        border-radius: 10px;
+        padding: 0.5rem 1rem; }
+  navbar #right-part-of-nav ul {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end; }
+    navbar #right-part-of-nav ul li {
+      padding: 1rem 1.5rem; }
+      navbar #right-part-of-nav ul li:first-child, navbar #right-part-of-nav ul li:nth-child(2), navbar #right-part-of-nav ul li:nth-child(3), navbar #right-part-of-nav ul li:nth-child(4) {
+        border-right: 1px solid grey; }
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin: 0 !important;
+  z-index: 2;
+  background: white; }
+  .dropdown li {
+    font-size: 12px;
+    padding: 0.4rem !important;
+    border-right: none !important; }
+
+.hide {
+  display: none !important; }
+
+.show {
+  display: flex !important; }
+
+small {
+  color: gray;
+  grid-column: span 2; }
+
+#scroll-down {
+  margin: 7px 0; }
+
+#content {
+  margin: 2rem 1.5rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr; }
+  #content #left-part #newsfeed {
+    padding: 2.5rem;
+    max-height: 125vh;
+    overflow-y: auto;
+    margin-top: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Light semi-transparent background */
+    backdrop-filter: blur(10px) brightness(1.2);
+    /* Frosted glass effect with brightness for light theme */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Subtle border for the frosted area */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+    #content #left-part #newsfeed form#post-form {
+      display: grid;
+      grid-template-columns: 1fr 0.2fr 0.2fr;
+      grid-gap: 1rem;
+      margin: 0;
+      padding: 0; }
+      #content #left-part #newsfeed form#post-form input {
+        padding: 0.7rem 0.4rem; }
+      #content #left-part #newsfeed form#post-form .submit {
+        color: white;
+        background-color: green;
+        border-radius: 5px;
+        padding: 0.2rem 0.5rem;
+        height: 70%;
+        align-self: center; }
+      #content #left-part #newsfeed form#post-form .cancel {
+        background-color: #0165e1;
+        color: white;
+        border-radius: 5px;
+        height: 70%;
+        align-self: center; }
+      #content #left-part #newsfeed form#post-form .options {
+        background-color: #333;
+        color: white;
+        border-radius: 1px;
+        padding: 0.3rem;
+        width: 20%; }
+      #content #left-part #newsfeed form#post-form #form-options {
+        display: grid;
+        grid-column: span 3;
+        grid-row: span 2;
+        grid-template-columns: repeat(4, 1fr); }
+    #content #left-part #newsfeed .feed-card {
+      margin: 2rem 0;
+      border: 1px solid gray;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.6);
+      /* Light semi-transparent background */
+      backdrop-filter: blur(10px) brightness(1.2);
+      /* Frosted glass effect with brightness for light theme */
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      /* Subtle border for the frosted area */
+      border-radius: 10px;
+      /* Rounded corners */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+      #content #left-part #newsfeed .feed-card img {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px; }
+      #content #left-part #newsfeed .feed-card .card-content {
+        margin: 1rem 0; }
+      #content #left-part #newsfeed .feed-card .card-upper-part {
+        display: flex;
+        justify-content: space-between; }
+        #content #left-part #newsfeed .feed-card .card-upper-part .user-profile {
+          display: flex; }
+      #content #left-part #newsfeed .feed-card .card-comment {
+        display: grid;
+        grid-template-columns: 0.05fr 1fr 0.1fr; }
+        #content #left-part #newsfeed .feed-card .card-comment input {
+          padding: 0.5rem 0.7rem;
+          width: 100%; }
+        #content #left-part #newsfeed .feed-card .card-comment .post {
+          margin-left: 0.3rem;
+          display: block;
+          width: 100%;
+          padding: 0.3rem 0.1rem;
+          align-self: center;
+          background-color: green;
+          color: white;
+          border-radius: 2px; }
+  #content #left-part #lower-cards {
+    margin-top: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    #content #left-part #lower-cards .lower-card {
+      margin-right: 1rem;
+      padding: 1rem 0.65rem;
+      background-color: rgba(255, 255, 255, 0.6);
+      /* Light semi-transparent background */
+      backdrop-filter: blur(10px) brightness(1.2);
+      /* Frosted glass effect with brightness for light theme */
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      /* Subtle border for the frosted area */
+      border-radius: 10px;
+      /* Rounded corners */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 250px;
+      display: grid;
+      grid-template-columns: 1fr 0.2fr; }
+      #content #left-part #lower-cards .lower-card h4 {
+        grid-column: span 2; }
+      #content #left-part #lower-cards .lower-card ul.x-scrollable-lists {
+        overflow-y: auto;
+        display: flex;
+        flex-direction: row;
+        padding: 0 10px; }
+        #content #left-part #lower-cards .lower-card ul.x-scrollable-lists::-webkit-scrollbar {
+          width: 0px;
+          height: 0px; }
+        #content #left-part #lower-cards .lower-card ul.x-scrollable-lists:hover::-webkit-scrollbar {
+          height: 7px;
+          background-color: white; }
+        #content #left-part #lower-cards .lower-card ul.x-scrollable-lists::-webkit-scrollbar-thumb {
+          background-color: darkgrey;
+          border-radius: 10px; }
+        #content #left-part #lower-cards .lower-card ul.x-scrollable-lists:-webkit-scrollbar-track {
+          background-color: white; }
+        #content #left-part #lower-cards .lower-card ul.x-scrollable-lists li {
+          padding: 1rem; }
+          #content #left-part #lower-cards .lower-card ul.x-scrollable-lists li div.img {
+            margin-bottom: 5px; }
+            #content #left-part #lower-cards .lower-card ul.x-scrollable-lists li div.img img {
+              display: block;
+              margin: 0px auto;
+              width: 20px !important;
+              height: 20px; }
+          #content #left-part #lower-cards .lower-card ul.x-scrollable-lists li div.organization-info {
+            text-align: center; }
+  #content #right-part {
+    margin: 0.1rem 1rem; }
+    #content #right-part .right-card {
+      font-size: 12px;
+      color: #333;
+      margin-bottom: 1rem;
+      border: 1px solid #333;
+      padding: 1rem 0.65rem;
+      background-color: rgba(255, 255, 255, 0.6);
+      /* Light semi-transparent background */
+      backdrop-filter: blur(10px) brightness(1.2);
+      /* Frosted glass effect with brightness for light theme */
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      /* Subtle border for the frosted area */
+      border-radius: 10px;
+      /* Rounded corners */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+      #content #right-part .right-card ul.scrollable-lists {
+        display: flex;
+        flex-direction: column;
+        margin-top: 7px;
+        max-height: 80px;
+        overflow-y: auto;
+        padding: 0 10px; }
+        #content #right-part .right-card ul.scrollable-lists::-webkit-scrollbar {
+          width: 0px; }
+        #content #right-part .right-card ul.scrollable-lists:hover::-webkit-scrollbar {
+          width: 5px;
+          background-color: white; }
+        #content #right-part .right-card ul.scrollable-lists::-webkit-scrollbar-thumb {
+          background-color: darkgrey;
+          border-radius: 20px; }
+        #content #right-part .right-card ul.scrollable-lists:-webkit-scrollbar-track {
+          background-color: red; }
+        #content #right-part .right-card ul.scrollable-lists::-webkit-scrollbar-button {
+          display: block;
+          height: 5px;
+          background-color: lightgrey; }
+        #content #right-part .right-card ul.scrollable-lists::-webkit-scrollbar-button:vertical:decrement {
+          background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23ffffff" d="M7 14l5-5 5 5H7z"/></svg>') no-repeat center;
+          background-size: 8px;
+          /* Arrow size */ }
+        #content #right-part .right-card ul.scrollable-lists::-webkit-scrollbar-button:vertical:increment {
+          background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23ffffff" d="M7 10l5 5 5-5H7z"/></svg>') no-repeat center;
+          background-size: 8px;
+          /* Arrow size */ }
+        #content #right-part .right-card ul.scrollable-lists li {
+          margin-bottom: 5px; }
+          #content #right-part .right-card ul.scrollable-lists li div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.35rem; }
+        #content #right-part .right-card ul.scrollable-lists img {
+          width: 20px;
+          height: 20px; }
+    #content #right-part .progress ul li div {
+      border: 1px solid gray; }
+    #content #right-part .progress ul li div {
+      height: 10px; }
+    #content #right-part .progress ul li:nth-child(1) div div {
+      background-color: green;
+      width: 90%; }
+    #content #right-part .progress ul li:nth-child(2) div div {
+      background-color: green;
+      width: 80%; }
+    #content #right-part .progress ul li:nth-child(3) div div {
+      background-color: green;
+      width: 85%; }
+    #content #right-part .progress ul li:nth-child(4) div div {
+      background-color: green;
+      width: 50%; }
+    #content #right-part .tasks .submit {
+      background-color: green;
+      color: white;
+      padding: 0.4rem;
+      border-radius: 2px; }
+
+footer .sprites-line {
+  background-image: url("https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/layout/line-af27d2e96b6111a10a19e1bccb88566795565fd3c6cfccb2be41cd9968815840.png");
+  height: 9px;
+  width: 100%; }
+
+footer .sprites-m-logo {
+  background-image: url("https://d3p03xrqe2ja84.cloudfront.net/assets/sprites/logos/m-logo-1f7cf135af35e6600010dfc890ee37f1bce682fc45cb34884791f2e1a55e3526.png");
+  height: 48px;
+  width: 48px;
+  margin-top: -28px;
+  margin-right: auto;
+  margin-left: auto; }
+
+footer .logo img {
+  display: block;
+  margin: 1rem auto; }
+
+footer .links {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  text-align: center; }
+  footer .links h4 {
+    font-size: 15px; }
+  footer .links ul {
+    margin-top: 0rem;
+    padding: 0.5rem; }
+    footer .links ul li {
+      line-height: 30px;
+      font-size: 10px; }
+  footer .links .explore-link {
+    grid-row: span 2; }
+    footer .links .explore-link ul li {
+      font-size: 10px;
+      margin-bottom: 1px; }
+
+footer .contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 10rem;
+  font-size: 15px; }
+  footer .contact-us ul {
+    margin-top: 5px; }
+    footer .contact-us ul li {
+      margin-bottom: 2px; }
+
+footer .social-links {
+  margin: 3rem 10rem;
+  text-align: center;
+  padding: 2rem; }
+  footer .social-links ul {
+    margin-top: rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); }
+    footer .social-links ul li {
+      padding: 1rem; }
+
+footer .card {
+  background-color: rgba(255, 255, 255, 0.6);
+  /* Light semi-transparent background */
+  backdrop-filter: blur(10px) brightness(1.2);
+  /* Frosted glass effect with brightness for light theme */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* Subtle border for the frosted area */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
