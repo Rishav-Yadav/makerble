@@ -9,6 +9,11 @@ function init() {
     .addEventListener("click", (e) => {
       showDropDown(e);
     });
+  document.querySelector(".options").addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log(e.target);
+    document.getElementById("options-ul").classList.toggle("show");
+  });
   const scrollsDown = document.querySelectorAll(".scroll-down");
   scrollsDown.forEach((i) => {
     i.addEventListener("click", (e) => {

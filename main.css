@@ -8,6 +8,7 @@ a {
 
 button {
   border: none;
+  margin-right: 1rem;
   background-color: white;
   width: 100%;
   height: 100%;
@@ -361,3 +362,11 @@ footer .card {
   border-radius: 10px;
   /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+
+.options-ul {
+  display: flex !important;
+  flex-direction: column;
+  padding: 0; }
+  .options-ul li button {
+    background-color: red !important;
+    margin-right: 2rem !important; }
